@@ -4,7 +4,7 @@ pipeline {
       stage('CHECKOUT '){
         steps{
           echo'           ------------------------------------------------  COMENZANDO LA DESCARGA DEL PROYECTO  ------------------------------------------------                        '
-          git credentialsId: 'rx7Su9KPrNhajpUNkP5N',
+          git credentialsId: 'mvelazquez+rx7Su9KPrNhajpUNkP5N',
               url: 'https://bitbucket.org/ividevelopers/sw-dominios.git'
         }
       }
@@ -23,7 +23,7 @@ pipeline {
 
           withSonarQubeEnv('local_sonar'){
             
-            bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar -Dsonar.projectKey=com.mycompany.app:my-app -Dsonar.organization=mavesis-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=39acfca66c299343b8ac4427b69b5cb78db97cf1 -Dsonar.branch.name='+BRANCH_NAME
+            bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar -Dsonar.projectKey=ProyectoIvi -Dsonar.organization=Manu -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=39acfca66c299343b8ac4427b69b5cb78db97cf1 -Dsonar.branch.name='+BRANCH_NAME
           }
         }
       }
