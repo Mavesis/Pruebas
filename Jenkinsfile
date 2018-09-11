@@ -4,7 +4,7 @@ pipeline {
       stage('CHECKOUT '){
         steps{
           echo'           ------------------------------------------------  COMENZANDO LA DESCARGA DEL PROYECTO  ------------------------------------------------                        '
-          git credentialsId: 'rx7Su9KPrNhajpUNkP5N',
+          git credentialsId: 'mvelazquez+hmhn3c3r',
               url: 'mvelazquez@bitbucket.org:ividevelopers/sw-dominios.git'
         }
       }
