@@ -4,8 +4,8 @@ pipeline {
       stage('CHECKOUT '){
         steps{
           echo'           ------------------------------------------------  COMENZANDO LA DESCARGA DEL PROYECTO  ------------------------------------------------                        '
-          git credentialsId: 'mvelazquez+rx7Su9KPrNhajpUNkP5N',
-              url: 'git@bitbucket.org:ividevelopers/sw-dominios.git'
+          git credentialsId: 'rx7Su9KPrNhajpUNkP5N',
+              url: 'mvelazquez@bitbucket.org:ividevelopers/sw-dominios.git'
         }
       }
     //   stage('FASE 2 SMC '){
